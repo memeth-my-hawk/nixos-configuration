@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  networking.hostName = "asus"; # Define your hostname.
+  networking.hostName = ""; # Define your hostname.
   networking.wireless = {
     enable = true;
     networks = {
