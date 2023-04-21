@@ -51,7 +51,7 @@ in
     extraPackages = with pkgs; [
       dbus-sway-environment
       configure-gtk
-      swaylock
+      #swaylock
       swayidle
     ];
     wrapperFeatures = {
@@ -60,5 +60,5 @@ in
     };
   };
 
-  environment.etc."sway/config".source = "/etc/nixos/dotfiles/sway/config";
+  # environment.etc."sway/config".source = "/etc/nixos/dotfiles/sway/config";
 }

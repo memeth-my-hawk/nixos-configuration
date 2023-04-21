@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Source Code Pro Semibold, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Source Code Pro Semibold", "Font Awesome 5 Free", "Font Awesome 6", Roboto, Helvetica, Arial, sans-serif;
     font-size: 10px;
 }
 

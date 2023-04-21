@@ -15,5 +15,6 @@
   ];
 
   programs.partition-manager.enable = true;
+  services.power-profiles-daemon.enable = false;
 }
 

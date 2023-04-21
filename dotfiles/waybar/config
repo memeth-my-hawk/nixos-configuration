@@ -1,5 +1,5 @@
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -7,22 +7,22 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "wlr/mode", "wlr/scratchpad", "custom/media"],
     "modules-center": ["wlr/window"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "wlr/language", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-    //    "format": "{name}: {icon}",
-    //    "format-icons": {
-    //        "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
     },
     "keyboard-state": {
         "numlock": true,
@@ -89,10 +89,14 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 1
+
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "interval": 1
+
     },
     "temperature": {
         "thermal-zone": 2,
@@ -100,12 +104,13 @@
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
+        "interval": 1, 
         "format-icons": ["", "", ""]
     },
     "backlight": {
         "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -131,7 +136,8 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 1
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

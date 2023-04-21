@@ -4,11 +4,6 @@
   # Services and daemons.
   services = {
 
-    #xserver = {
-    #  enable = true;
-    #  layout = "tr";
-    #};
-
     # Enable dbus service.
     dbus.enable = true;
 
@@ -53,11 +48,24 @@
     # Enable TLP battery saver service
     tlp.enable = true;
 
-    # Disable power-profiles-daemon for TLP if plasma is enabled.
-    power-profiles-daemon.enable = false;
-
     # Enable OpenSSH service
     openssh.enable = true;
+    
+    # Enable Music Player Daemon.
+    mpd = {
+      enable = true;
+      musicDirectory = "/home/memeth/hdd/memeth/all\ music";
+      extraConfig = ''
+        audio_output {
+        type "pipewire"
+        name "My PipeWire Output"
+        }
+      '';
+
+      # Optional:
+      # network.listenAddress = "any"; # if you want to allow non-localhost connections
+      # zstartWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
+    };
 
   }; # End of services
 

@@ -21,9 +21,11 @@
         configure = "sudo vim /etc/nixos/configuration.nix";
         r = "R";
         btt = "bluetoothctl";
+        btton = "bluetoothctl power on";
+        bttoff = "bluetoothctl power off";
         neo = "neofetch";
         hypr = "dbus-run-session Hyprland -c /etc/nixos/dotfiles/hypr/hyprland.conf";
-        swy = "dbus-run-session exec sway";
+        swy = "dbus-run-session sway --config /etc/nixos/dotfiles/sway/config";
       };
 
   };
