@@ -50,7 +50,7 @@
       spotdl
       ventoy-full
       dmidecode
-      ntfs-3g
+      ntfs3g
     ];
 
 
