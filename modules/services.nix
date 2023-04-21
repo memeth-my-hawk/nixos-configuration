@@ -21,7 +21,6 @@
     # Enable Printing service.
     printing = {
       enable = true;
-      drivers = [ pkgs.hplipWithPlugin pkgs.samsung-unified-linux-driver ];
     };
 
     # Enable TRIM support for SSDs
@@ -52,20 +51,20 @@
     openssh.enable = true;
     
     # Enable Music Player Daemon.
-    mpd = {
-      enable = true;
-      musicDirectory = "/home/memeth/hdd/memeth/all\ music";
-      extraConfig = ''
-        audio_output {
-        type "pipewire"
-        name "My PipeWire Output"
-        }
-      '';
+    #mpd = {
+    #  enable = true;
+    #  musicDirectory = "/home/memeth/hdd/memeth/all\ music";
+    #  extraConfig = ''
+    #    audio_output {
+    #    type "pipewire"
+    #    name "My PipeWire Output"
+    #    }
+    #  '';
 
       # Optional:
       # network.listenAddress = "any"; # if you want to allow non-localhost connections
       # zstartWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
-    };
+    #};
 
   }; # End of services
 

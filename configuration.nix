@@ -15,7 +15,6 @@
     ./modules/services.nix # various system wide services
     ./modules/hyprland.nix # uncomment to enable Hyprland, a nice wayland compositor.
     ./modules/myHardware.nix # hardware settings such as bluetooth, microcode, printers, etc.
-    ./modules/nvidia.nix # uncomment if you want nvidia drivers. Intel and AMD works fine OOTB anyways.
     ./modules/networking.nix # networking settings,ie. hostname, wifi networks, etc.
     #./modules/xorg.nix # uncomment to enable xorg.
     #./modules/gnome.nix # uncomment to enable GNOME desktop, requires xorg.nix.
