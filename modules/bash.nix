@@ -10,7 +10,7 @@
         ping = "ping nixos.org";
         ht = "htop";
         n = "nnn -Hod";
-        ll = "ls --color=auto -la";
+        ll = "ls --color=auto -lash";
         up = "cd ..";
         py = "python";
         wttr = "curl wttr.in";

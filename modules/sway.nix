@@ -37,6 +37,10 @@ let
         export XDG_DATA_DIRS=${datadir}:$XDG_DATA_DIRS
         gnome_schema=org.gnome.desktop.interface
         gsettings set $gnome_schema gtk-theme 'Arc-Lighter'
+        gsettings set $gnome_schema font-name 'Cantarell 9'
+        gsettings set $gnome_schema monospace-font-name 'Source Code Pro 9'
+        gsettings set $gnome_schema icon-theme 'Papirus-Light'
+        gsettings set $gnome_schema cursor-theme 'Bibata-Modern-Classic'
         '';
   };
 

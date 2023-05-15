@@ -17,6 +17,8 @@
     polkit.enable = true;
   };
 
+  xdg.mime.enable = true;
+
   # These pkgs are meant to be used in any wayland compositor that I have.
   environment.systemPackages = with pkgs; [
     xdg-utils
@@ -41,6 +43,8 @@
     egl-wayland
     mesa
     swaylock
+    mimeo
+    bibata-cursors
   ];
 
 

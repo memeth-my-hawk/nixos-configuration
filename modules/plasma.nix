@@ -10,7 +10,7 @@
     yakuake
     kate
     ark
-    arc-kde-theme
+    #arc-kde-theme
     polkit-kde-agent
   ];
 

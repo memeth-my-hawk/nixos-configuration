@@ -8,7 +8,9 @@
 
     cpu.intel.updateMicrocode = true;
 
-    services.printing.drivers = [ pkgs.hplipWithPlugin pkgs.samsung-unified-linux-driver ];
-
+    
   };
+  
+  services.printing.drivers = [ pkgs.hplipWithPlugin pkgs.samsung-unified-linux-driver ];
+
 }

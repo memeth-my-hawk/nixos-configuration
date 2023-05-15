@@ -51,6 +51,18 @@
       ventoy-full
       dmidecode
       ntfs3g
+      papirus-icon-theme
+      arc-theme
+      cmus
+      ncmpcpp
+      ranger
+      lf
+      w3m
+      mpv
+      acpi
+      pandoc
+      texlive.combined.scheme-full
+      zathura
     ];
 
 
