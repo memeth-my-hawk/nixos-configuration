@@ -33,9 +33,9 @@
           key_mgmt=WPA-EAP
           pairwise=CCMP
           eap=PEAP
-          identity="e242578@metu.edu.tr"
+          identity="@metu.edu.tr"
           anonymous_identity="anonymous@metu.edu.tr"
-          password="!Stat/22/!"
+          password=""
           '';      
         };
 
