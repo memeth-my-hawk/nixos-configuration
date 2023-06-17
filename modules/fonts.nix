@@ -8,6 +8,8 @@
     source-code-pro
     cantarell-fonts
     corefonts
+    carlito
+    caladea
   ];
 
 }

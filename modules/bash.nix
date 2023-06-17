@@ -10,7 +10,7 @@
         ping = "ping nixos.org";
         ht = "htop";
         n = "nnn -Hod";
-        ll = "ls --color=auto -lash";
+        ll = "ls --color=auto -lashX";
         up = "cd ..";
         py = "python";
         wttr = "curl wttr.in";
@@ -26,6 +26,8 @@
         neo = "neofetch";
         hypr = "dbus-run-session Hyprland -c /etc/nixos/dotfiles/hypr/hyprland.conf";
         swy = "dbus-run-session sway --config /etc/nixos/dotfiles/sway/config";
+        bat = "acpi -V";
+        journal = "journalctl -p 3 -b";
       };
 
   };

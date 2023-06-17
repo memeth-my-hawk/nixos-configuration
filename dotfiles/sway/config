@@ -9,6 +9,10 @@ exec waybar -c /etc/nixos/dotfiles/waybar/swayconfig -s /etc/nixos/dotfiles/wayb
 # SwayWM font.
 font pango:Source Code Pro Bold 8
 
+
+# start nm-applet
+exec nm-applet
+
 # start gammastep
 exec gammastep
 
@@ -32,7 +36,7 @@ set $fuzzel fuzzel --config /etc/nixos/dotfiles/fuzzel/fuzzel.ini || pkill fuzze
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
-output * bg `find ~/wallpapers -type f | shuf -n 1` fill
+output * bg `find ~/wallpapers/regular -type f | shuf -n 1` fill
 #
 # Example configuration:
 #
@@ -79,7 +83,7 @@ input "1118:2096:Microsoft_Bluetooth_Mouse" {
 
 
 # Start a terminal
-bindsym $mod+Return exec $kitty
+bindsym $mod+Return exec $foot
 
 # Kill focused windo
 bindsym $mod+Shift+q kill
@@ -259,8 +263,8 @@ for_window [class="zoom"] floating enable
 
 # Custom keybindings
 bindsym $mod+z exec swaylock --color F2F2F2 --font "Source Code Pro"
-bindsym Print exec grim  ~/Pictures/$(date +'%H:%M:%S.png')
-bindsym Shift+Print exec grim  -g "$(slurp)" ~/Pictures/$(date +'%H:%M:%S.png')
+bindsym Print exec grim  ~/$(date +'ss-%H:%M:%S.png')
+bindsym Shift+Print exec grim  -g "$(slurp)" ~/$(date +'ss-%H:%M:%S.png')
 bindsym $mod+w exec firefox
 
 exec dbus-sway-environment

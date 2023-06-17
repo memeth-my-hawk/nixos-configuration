@@ -61,8 +61,24 @@
       mpv
       acpi
       pandoc
-      texlive.combined.scheme-full
+      texlive.combined.scheme-small
       zathura
+      parted
+      android-file-transfer
+      jmtpfs
+      droidcam
+      protonvpn-cli
+      usbutils
+      irssi
+      zip
+      unzip
+      shared-mime-info
+      mimeo
+      feh
+      networkmanagerapplet
+      trash-cli
+      tree
+
     ];
 
 

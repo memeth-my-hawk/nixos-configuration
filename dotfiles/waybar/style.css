@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Source Code Pro Semibold", "Font Awesome 5 Free", "Font Awesome 6", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Source Code Pro Semibold", "Font Awesome 5 Free", "Font Awesome 6";
     font-size: 10px;
 }
 
@@ -87,7 +87,7 @@ button:hover {
 #disk,
 #temperature,
 #backlight,
-#network,
+#network, 
 #pulseaudio,
 #wireplumber,
 #custom-media,
@@ -120,8 +120,8 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #cc3399;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
@@ -168,10 +168,12 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+	color: #000000;
+    background-color: #ffffff;
 }
 
 #network.disconnected {
+	color: #ffffff;
     background-color: #f53c3c;
 }
 
@@ -217,7 +219,8 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+	color: #000000;
+    background-color: #ffffff;
 }
 
 #tray > .passive {
@@ -267,8 +270,8 @@ label:focus {
     background: #97e1ad;
     color: #000000;
     padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+    /*margin: 0 5px;*/
+    /*min-width: 16px;*/
 }
 
 #keyboard-state > label {

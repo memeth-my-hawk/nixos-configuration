@@ -47,7 +47,7 @@
     isNormalUser = true;
     home = "/home/memeth";
     description = "Mehmet Karaman";
-    extraGroups = [ "wheel" "libvirtd" "storage" "mlocate" "video" "docker" "audio" "input" "systemd-journal" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "libvirtd" "storage" "mlocate" "video" "docker" "audio" "input" "systemd-journal" "networkmanager"]; # Enable ‘sudo’ for the user.
   };
 
 
