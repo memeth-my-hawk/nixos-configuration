@@ -65,9 +65,7 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.11"; # Did you read the comment?
 
-  environment.sessionVariables = rec {
-    XDG_CONFIG_HOME = "/etc/nixos/dotfiles";
-  };
+  
 
 }
 
