@@ -176,7 +176,7 @@
   ];
 
 
-    
+ system.stateVersion = "22.11";    
  system.copySystemConfiguration = true;
 
 
