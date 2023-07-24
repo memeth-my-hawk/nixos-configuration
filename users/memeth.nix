@@ -68,6 +68,8 @@
         ''
           cp -r /home/memeth/.config/{alacritty,dunst,foot,fuzzel,hypr,kitty,neofetch,htop,sway,waybar,yambar}/ /home/memeth/nixos-configuration/dotfiles/
           cp -r /etc/nixos/modules /home/memeth/nixos-configuration/
+          cp -r /etc/nixos/devices /home/memeth/nixos-configuration/
+          cp -r /etc/nixos/users /home/memeth/nixos-configuration/
           cp /etc/nixos/configuration.nix /home/memeth/nixos-configuration/
         '';
       };
