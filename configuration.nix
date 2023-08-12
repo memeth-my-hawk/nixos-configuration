@@ -35,8 +35,6 @@
     #./modules/wayland.nix # uncomment to enable wayland environment, this module includes pkgs that are made for wayland. useful in sway and hyprland.
     ./modules/virtualisation.nix # settings for virtualisations and VMs, like VirtualBox and virt-manager
     ./modules/packages.nix # system wide packages.
-    #./modules/r.nix
-    #./modules/python.nix
     ];
 
 
