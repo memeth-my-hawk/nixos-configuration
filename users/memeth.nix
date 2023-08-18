@@ -43,6 +43,7 @@
       minetest
       sgtpuzzles
       gnumake
+      ktouch
       julia-bin
       jupyter
       nnn

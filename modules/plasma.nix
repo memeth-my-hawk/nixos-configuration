@@ -25,6 +25,8 @@
     libsForQt5.sddm-kcm
     kdeconnect
     ktorrent
+    ksystemlog
+    libsForQt5.kamoso
   ];
 
   programs.dconf.enable = true;
@@ -35,6 +37,11 @@
   ];
 
   programs.partition-manager.enable = true;
+
+
+  environment.sessionVariables = rec {
+    MOZ_ENABLE_WAYLAND = "1 firefox";
+  };
 
 
   xdg.portal = {

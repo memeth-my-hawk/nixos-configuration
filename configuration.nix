@@ -26,7 +26,6 @@
     ./modules/fonts.nix # my selection of fonts
     ./modules/services.nix # various system wide services
     #./modules/hyprland.nix # uncomment to enable Hyprland, a nice wayland compositor.
-    #./modules/myHardware.nix # hardware settings such as bluetooth, microcode, printers, etc.
     ./modules/xorg.nix # uncomment to enable xorg.
     #./modules/gnome.nix # uncomment to enable GNOME desktop, requires xorg.nix.
     ./modules/plasma.nix # same as GNOME, but for plasma. having GNOME and Plasma installed at the same time might have weird effects on your system, be careful.
