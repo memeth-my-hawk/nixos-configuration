@@ -30,6 +30,7 @@
     #./modules/gnome.nix # uncomment to enable GNOME desktop, requires xorg.nix.
     #./modules/plasma.nix # same as GNOME, but for plasma. having GNOME and Plasma installed at the same time might have weird effects on your system, be careful.
     ./modules/sway.nix # uncomment to enable SwayWM, a wayland compositor that is a drop-in replacement for i3wm.
+    #./modules/qtile.nix
     ./modules/vim.nix # vim plugins and vimrc options.
     ./modules/wayland.nix # uncomment to enable wayland environment, this module includes pkgs that are made for wayland. useful in sway and hyprland.
     ./modules/virtualisation.nix # settings for virtualisations and VMs, like VirtualBox and virt-manager
