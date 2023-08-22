@@ -30,7 +30,7 @@
         journal = "journalctl -p 3 -b";
       };
 
-      blesh.enable = true;
+      #blesh.enable = true;
 
       #shellInit = {
       #  "exec ly"

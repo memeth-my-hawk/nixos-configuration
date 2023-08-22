@@ -33,6 +33,7 @@ in
     wlr = {
       enable = true;
     };
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
   security = {

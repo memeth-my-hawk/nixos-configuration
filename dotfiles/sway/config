@@ -1,7 +1,7 @@
 ### Variables
 # Bars
 #set $bar yambar
-set $bar waybar -c ~/.config/waybar/swayconfig
+#set $bar waybar -c ~/.config/waybar/swayconfig
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -24,10 +24,9 @@ set $launch fuzzel || pkill fuzzel
 #exec $bar &
 exec nm-applet &
 exec gammastep &
-exec dbus-sway-environment &
-exec configure-gtk &
+exec dbus-sway-environment
+exec configure-gtk
 exec dunst &
-
 
 
 # SwayWM font.
@@ -297,6 +296,8 @@ seat seat0 xcursor_theme Bibata-Modern-Classic
 set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
+
+exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP"
 
 include /etc/sway/config.d/*
 
