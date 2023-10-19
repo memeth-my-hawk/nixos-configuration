@@ -42,7 +42,7 @@
     },
 
     "disk": {
-  	  "interval": 30,
+  	  "interval": 5,
   	  "format": " {percentage_used}%",
     },    
 
@@ -96,17 +96,17 @@
         "tooltip-format": "<big>{:%H:%M:%S}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%H:%M:%S}",
         "format-alt": "{:%d/%m/%Y}",
-        "interval": 1,
+        "interval": 5,
     },
     "cpu": {
         "format": " {usage}%",
         "tooltip": false,
-        "interval": 1
+        "interval": 5
 
     },
     "memory": {
         "format": " {}%",
-        "interval": 1
+        "interval": 5
 
     },
     "temperature": {
@@ -115,7 +115,7 @@
         "critical-threshold": 80,
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C",
-        "interval": 1, 
+        "interval": 5, 
         "format-icons": ["", "", ""]
     },
     "backlight": {
@@ -129,6 +129,7 @@
             "warning": 30,
             "critical": 15
         },
+        "interval": 2,
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
@@ -136,9 +137,6 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -148,7 +146,7 @@
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "⚠ Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "interval": 1
+        "interval": 2
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

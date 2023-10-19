@@ -8,6 +8,7 @@
       matplotlib
       numpy
       pillow
+      openpyxl
     ];
   in
 
@@ -43,7 +44,7 @@
       labplot
       gcc
       minetest
-      sgtpuzzles
+      sgt-puzzles
       gnumake
       #ktouch
       julia-bin
@@ -61,6 +62,11 @@
       droidcam
       protonvpn-gui
       quarto
+      lite-xl
+      lite
+      zathura
+      mpv
+      joplin-desktop
     ];
 
 
@@ -73,8 +79,10 @@
   
   };
 
+  #services.jupyter.enable = true;
+
   #nix.nixPath =  [
-  #  "nixpkgs=http://nixos.org/channels/nixos-unstable/nixexprs.tar.xz" 
+  #  "nixpkgs=channel:nixos-unstable nix-build" 
   #  "nixos-config=/etc/nixos/configuration.nix"
   #];
 
@@ -82,7 +90,7 @@
     # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
-  system.copySystemConfiguration = true;
+  #system.copySystemConfiguration = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

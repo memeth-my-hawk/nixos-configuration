@@ -20,6 +20,7 @@ let
         gsettings set $gnome_schema monospace-font-name 'Source Code Pro 9'
         gsettings set $gnome_schema icon-theme 'Papirus-Light'
         gsettings set $gnome_schema cursor-theme 'Bibata-Modern-Classic'
+        gsettings set $gnome_schema cursor-size '24'
         '';
   };
 
@@ -72,6 +73,8 @@ in
     networkmanagerapplet
     trash-cli
     ly
+    libsForQt5.qt5.qtwayland
+    polkit_gnome
   ];
 
 

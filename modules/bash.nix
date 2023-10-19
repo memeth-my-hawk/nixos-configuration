@@ -27,7 +27,7 @@
         hypr = "dbus-run-session Hyprland";
         swy = "dbus-run-session sway";
         bat = "acpi -V";
-        journal = "journalctl -p 3 -b";
+        errors = "journalctl -p 3 -b";
       };
 
       #blesh.enable = true;

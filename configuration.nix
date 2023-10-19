@@ -35,10 +35,9 @@
     ./modules/wayland.nix # uncomment to enable wayland environment, this module includes pkgs that are made for wayland. useful in sway and hyprland.
     ./modules/virtualisation.nix # settings for virtualisations and VMs, like VirtualBox and virt-manager
     ./modules/packages.nix # system wide packages.
-    ./modules/unstable.nix # enable to declaratively switch to unstable distribution. this feels better than adding unstable channel manually/imperatively.
-    ];
+    #./modules/unstable.nix # enable to declaratively switch to unstable distribution. this feels better than adding unstable channel manually/imperatively.
+  ];
 
-
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
-
   

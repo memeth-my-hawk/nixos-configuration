@@ -23,13 +23,13 @@
     libsForQt5.kcmutils
     libsForQt5.flatpak-kcm
     libsForQt5.sddm-kcm
-    kdeconnect
     ktorrent
     ksystemlog
     libsForQt5.kamoso
   ];
 
   programs.dconf.enable = true;
+  programs.kdeconnect.enable = true;
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     elisa

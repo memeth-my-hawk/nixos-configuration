@@ -74,7 +74,7 @@ input "1118:2096:Microsoft_Bluetooth_Keyboard" {
 	xkb_layout tr
 }   
            
-input "1118:2096:Microsoft_Bluetooth_Mouse" {
+input "1118:2095:Microsoft_Bluetooth_Mouse" {
 	natural_scroll enabled
 	middle_emulation disabled
 }
@@ -297,7 +297,7 @@ set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
-exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP"
+exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP QT_WAYLAND_DISABLE_WINDOWDECORATION QT_QPA_PLATFORM" 
 
 include /etc/sway/config.d/*
 
