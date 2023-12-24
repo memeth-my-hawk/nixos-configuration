@@ -9,7 +9,7 @@
    # Hardware settings.
   hardware = {
     bluetooth.enable = true;
-    bluetooth.powerOnBoot = false;
+    bluetooth.powerOnBoot = true;
     bluetooth.settings = {
       General = {
         Experimental = true;
