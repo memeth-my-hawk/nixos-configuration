@@ -1,0 +1,64 @@
+[colors.bright]
+black = "#595959"
+blue = "#4d94ff"
+cyan = "#1affff"
+green = "#67d69f"
+magenta = "#e554ff"
+red = "#ff3333"
+white = "#e2e2e2"
+yellow = "#f2ff36"
+
+[colors.normal]
+black = "#262626"
+blue = "#3786e6"
+cyan = "#33cccc"
+green = "#31bd77"
+magenta = "#b342c7"
+red = "#e60000"
+white = "#ffffff"
+yellow = "#e6e600"
+
+[colors.primary]
+background = "#f2f2f2"
+foreground = "#000000"
+
+[cursor]
+blink_interval = 750
+blink = "On"
+
+[cursor.style]
+shape = "Block"
+
+[cursor.vi_mode_style]
+shape = "Block"
+
+[font]
+size = 9.0
+
+[font.bold]
+family = "Source Code Pro"
+style = "Bold"
+
+[font.bold_italic]
+family = "Source Code Pro"
+style = "Bold Italic"
+
+[font.italic]
+family = "Source Code Pro"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro"
+style = "Regular"
+
+[scrolling]
+history = 6000
+
+[window]
+dynamic_title = true
+startup_mode = "Maximized"
+title = "alacritty"
+
+[window.padding]
+x = 5
+y = 5
